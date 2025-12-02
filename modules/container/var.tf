@@ -5,3 +5,6 @@ variable "container_name" {
 variable "access_type" {
   type        = string
 }
+variable "storage_account_id" {
+  type = string
+}
