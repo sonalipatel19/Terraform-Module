@@ -21,5 +21,4 @@ resource "azurerm_kubernetes_cluster" "aks" {
     load_balancer_sku = "standard"
   }
 
-  depends_on = [module.subnet]
 }
