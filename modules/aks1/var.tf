@@ -14,12 +14,11 @@ variable "kubernetes_version" {
   type = string
 }
 
-variable "default_node_pool" {
-  type = object({
-    name                = string
-    vm_size             = string
-    node_count          = string
-  })
+variable "node_count" {
+  default = 1
+}
+variable "vm_size" {
+  default = "Standard_B2s"
 }
 
 variable "network_profile" {
