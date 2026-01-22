@@ -13,12 +13,12 @@ resource "azurerm_kubernetes_cluster" "aks" {
   }
 
   identity {
-    type = "SystemAssigned"
+    type = var.identity_type
   }
 
   network_profile {
-    network_plugin = "azure"
-    load_balancer_sku = "standard"
+    network_plugin = var.network_profile.network_plugin
+    load_balancer_sku = var.network_profile.load_balancer_sku
   }
 
 }

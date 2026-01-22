@@ -15,10 +15,11 @@ variable "kubernetes_version" {
 }
 
 variable "node_count" {
-  default = 1
+  type = number
 }
 variable "vm_size" {
-  default = "Standard_B2s"
+  type = string
+ 
 }
 
 variable "network_profile" {
