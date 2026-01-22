@@ -19,7 +19,12 @@ variable "node_count" {
 }
 variable "vm_size" {
   type = string
- 
+}
+variable "sku_tier" {
+  type = string
+}
+variable "support_plan" {
+  type = string
 }
 
 variable "network_profile" {
