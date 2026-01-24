@@ -28,6 +28,8 @@ variable "network_profile" {
   type = object({
     network_plugin     = string
     load_balancer_sku  = string
+    service_cidr      = string
+    dns_service_ip    = string
   })
 }
 variable "identity_type" {
