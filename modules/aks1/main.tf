@@ -3,7 +3,6 @@ resource "azurerm_kubernetes_cluster" "aks" {
   location            = var.location
   resource_group_name = var.resource_group_name
   dns_prefix          = var.dns_prefix
-  kubernetes_version  = var.kubernetes_version
   sku_tier            = var.sku_tier
   support_plan        = var.support_plan
 

@@ -10,9 +10,6 @@ variable "location" {
 variable "dns_prefix" {
   type = string
 }
-variable "kubernetes_version" {
-  type = string
-}
 
 variable "node_count" {
   type = number
