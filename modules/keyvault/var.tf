@@ -1,4 +1,4 @@
-variable "name" {
+variable "kv_name" {
   description = "Name of the Azure Keyvault"
   type        = string
 }
@@ -8,11 +8,5 @@ variable "resource_group_name" {
 variable "location" {
   type = string
 }
-variable "secret_name" {
-  type    = string
-  default = "Standard"
-}
-variable "value" {
-  type    = string
-}
+
 
