@@ -9,14 +9,3 @@ resource "azurerm_key_vault" "keyvault" {
   sku_name = "standard"
 }
 
-resource "azurerm_key_vault_secret" "sql_admin_username" {
-  name         = var.sql_admin_username
-  value        = var.admin_username
-  key_vault_id = azurerm_key_vault.keyvault.id
-}
-
-resource "azurerm_key_vault_secret" "sql_admin_password" {
-  name         = "sql-admin-password"
-  value        = var.admin_password
-  key_vault_id = azurerm_key_vault.keyvault.id
-}
