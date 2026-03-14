@@ -18,7 +18,7 @@ variable "admin_username" {
   type = string
 }
 
-variable "public_key_path" {
+variable "admin_password" {
   type = string
 }
 
@@ -32,16 +32,16 @@ variable "network_interface_id" {
 
 variable "os_disk" {
   type = object({
-    caching              = string
-    storage_account_type = string
+    caching              : string
+    storage_account_type : string
   })
 }
 
 variable "source_image_reference" {
   type = object({
-    publisher  = string
-    offer      = string
-    sku        = string
-    vm_version = string
+    publisher : string
+    offer     : string
+    sku       : string
+    vm_version   : string
   })
 }
