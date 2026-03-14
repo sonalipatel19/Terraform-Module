@@ -8,7 +8,7 @@ resource "azurerm_linux_virtual_machine" "vm1" {
 
   disable_password_authentication = var.disable_password_authentication
 
-  network_interface_id = [var.network_interface_id]
+  network_interface_ids = [var.network_interface_id]
 
   admin_ssh_key {
     username   = var.admin_username
