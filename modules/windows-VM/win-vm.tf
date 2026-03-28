@@ -1,5 +1,5 @@
 resource "azurerm_windows_virtual_machine" "vm1" {
-  name                = var.name
+  name                = var.vm_name
   resource_group_name = var.resource_group_name
   location            = var.location
   size                = var.size
