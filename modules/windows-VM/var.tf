@@ -22,10 +22,6 @@ variable "admin_password" {
   type = string
 }
 
-variable "disable_password_authentication" {
-  type = bool
-}
-
 variable "network_interface_id" {
   type = string
 }
