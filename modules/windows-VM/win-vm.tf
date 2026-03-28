@@ -5,10 +5,8 @@ resource "azurerm_windows_virtual_machine" "vm1" {
   size                = var.size
   admin_username      =  var.admin_username
   admin_password      = var.admin_password
-  disable_password_authentication = var.disable_password_authentication
 
   network_interface_ids = [var.network_interface_id]
-  
 
   os_disk {
     caching              = var.os_disk.caching
